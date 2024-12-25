@@ -1,0 +1,132 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h1 {
+  font-size: 2rem;
+  color: teal;
+  margin-bottom: 1rem;
+  text-align: center;
+  margin: 40px 0px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: teal;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  font-size: 1rem;
+  margin: 0.25rem 0;
+}
+
+button {
+  background-color: teal;
+  color: #fff;
+  border: none;
+  /* padding: 0.5rem 1rem; */
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 11px 15px;
+  font-size: 15px;
+
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* AddSale Component Styling */
+.add-sale-container {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  width: 60%;
+margin-left: 22%;
+}
+
+/* Horizontal Dashboard Layout for Remaining Components */
+#dashboard {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  overflow-x: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-left: 18%;
+  margin-top: 60px;
+
+}
+
+/* Component Styling */
+.component {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 0 0 auto; /* Prevent components from shrinking */
+  width: 300px; /* Fixed width for consistent layout */
+}
+
+.component h2 {
+  margin-top: 0;
+}
+
+.component ul {
+  margin-top: 1rem;
+}
+
+.component li {
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 0;
+}
+
+.component li:last-child {
+  border-bottom: none;
+}
+
+
+.add-sale-form input{
+  padding: 12px;
+  margin-right: 10px;
+  flex-direction: column;
+  width: 20%;
+
+}
+
+
+
+/* List Item Styling */
+.list-item {
+  display: flex;
+  justify-content: space-between; /* Ensure space between name and price */
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd; /* Optional: Add a dividing line */
+}
+
+.list-item:last-child {
+  border-bottom: none; /* Remove border for the last item */
+}
+
+.item-name {
+  font-weight: 600; /* Optional: Bold for the name */
+}
+
+.item-price {
+  color: #2c3e50; /* Optional: Price color */
+}
